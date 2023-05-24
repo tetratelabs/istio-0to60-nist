@@ -514,7 +514,7 @@ A Kubernetes cluster has already been provisioned for you.</p>
 <li>Click the project selector "pulldown" menu from the top banner, which will open a popup dialog</li>
 <li>Make sure the <em>Select from</em> organization is set to <em>tetratelabs.com</em></li>
 <li>Select the tab named <em>All</em></li>
-<li>You will see your GCP project name (istio-0to60..) listed under the organization tetratelabs.com</li>
+<li>You will see your GCP project name (<code>tetrate-nist-...</code>) listed under the organization tetratelabs.com</li>
 <li>Select the project from the list</li>
 </ol>
 <p>Verify that your project is selected:</p>
@@ -597,10 +597,10 @@ Click on the <em>Reconnect</em> button when this happens.</p>
 <h2 id="artifacts">Artifacts<a class="headerlink" href="#artifacts" title="Permanent link">&para;</a></h2>
 <p>The lab instructions reference Kubernetes yaml artifacts that you will need to apply to your cluster at specific points in time.</p>
 <p>You have the option of copying and pasting the yaml snippets directly from the lab instructions as you encounter them.</p>
-<p>Another option is to clone the <a href="https://github.com/tetratelabs/istio-0to60" target="_blank">GitHub repository for this workshop</a> from the Cloud Shell.  You will find all yaml artifacts in the subdirectory named <code>artifacts</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/tetratelabs/istio-0to60.git<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>mv<span class="w"> </span>istio-0to60/artifacts<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>rm<span class="w"> </span>-rf<span class="w"> </span>istio-0to60
+<p>Another option is to clone the <a href="https://github.com/tetratelabs/istio-0to60-nist" target="_blank">GitHub repository for this workshop</a> from the Cloud Shell.  You will find all yaml artifacts in the subdirectory named <code>artifacts</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/tetratelabs/istio-0to60-nist.git<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>mv<span class="w"> </span>istio-0to60-nist/artifacts<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>rm<span class="w"> </span>-rf<span class="w"> </span>istio-0to60-nist
 </code></pre></div>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <p>Now that we have access to our environment and to our Kubernetes cluster, we can proceed to install Istio.</p>
